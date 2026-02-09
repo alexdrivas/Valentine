@@ -56,21 +56,3 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 1. Shadcn UI components are located in `src/components/ui`
 2. Use npx shadcn-ui@latest add {component} to add a new component it will automatically update the `src/components/ui/index.tsx` file
 3. Reference the website for the component you want to use here: https://ui.shadcn.com/
-
-
-
-### Instructions 
-
-use this template T3 web app,  rmove uncessessary tables, auth, etc that doesnt align with this purpose 
-
-Purpose: design a simple one page web app that asks my gf to be my valentine. the user scrolls down the page, transitions cause images of the two of us to appear sliding up from the bottom of the page. Text on tehpage progresses veritially, s that she can read "Danielle, will you be my Valentine?"
-then a input box, designed like a middle school pice of paper with two boxes and text to the right "yes" or "no".
-the user can click the selection "yes" gets a green checkmark then celebration()
-
-celebration() - visual screen shows a bunch of hearts, confetti, on the screen for the duration of 5 seconds then fades away. 
-
-the user can only click once on teh yes, no user reaction of the user tries to select no. 
-
-I will provide 3 photos to inculde of us for now include placeholders. the impages should be in a vertical  pattern with sufficeitn space between them. 
-
-
