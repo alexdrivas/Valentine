@@ -5,7 +5,6 @@ import {
   type NextAuthOptions,
 } from "next-auth";
 import { type Adapter } from "next-auth/adapters";
-import DiscordProvider from "next-auth/providers/discord";
 import GithubProvider from "next-auth/providers/github";
 
 import { env } from "~/env";
@@ -60,8 +59,8 @@ export const authOptions: NextAuthOptions = {
   }) as Adapter,
   providers: [
     GithubProvider({
-      clientId: env.GITHUB_CLIENT_ID,
-      clientSecret: env.GITHUB_CLIENT_SECRET,
+      clientId: env.GITHUB_CLIENT_ID ?? "",
+      clientSecret: env.GITHUB_CLIENT_SECRET ?? "",
     }),
     /**
      * ...add more providers here.

@@ -27,9 +27,9 @@ export function PaperChoice({
       }}
     >
       <div className="absolute inset-0 overflow-hidden rounded-xl pointer-events-none">
-        {[...Array(12)].map((_, i) => (
+        {Array.from({ length: 12 }, (_, i) => (
           <div
-            key={i}
+            key={`line-${i}`}
             className="absolute left-0 right-0 border-t border-valentine-paper-line opacity-60"
             style={{ top: `${28 + i * 8}%` }}
           />
